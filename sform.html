@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <script src="Sform.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body onload="page()" class="body">
+    <div class="container d-flex justify-content-center mt-5 pt-3">
+      <div class="col-sm-6 card">
+        <!-- <div class="d-flex justify-content-end mb-4 mt-4 me-5">
+          <input
+            type="button"
+            onclick="HomeFunction()"
+            class="beautiful-button fw-bold text-light"
+            value="Go to student table"
+          />
+        </div> -->
+        <h2 class="text-center pb-4 pt-5 fw-bold">Student Form</h2>
+        <form id="myForm">
+          <div class="form-group row container d-flex justify-content-center">
+            <div class="col-sm-6">
+              <label type="text"> Name:</label><br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="input form-control mt-1"
+                placeholder="Enter your name"
+              />
+              <p id="name_err" class="text-danger"></p>
+            </div>
+            <div class="col-sm-6">
+              <label type="text"> FatherName:</label>
+              <input
+                type="text"
+                name="fatherName"
+                id="fatherName"
+                class="input form-control mt-1"
+                placeholder="Enter your fathername"
+              />
+              <p id="name0_err" class="text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row container">
+            <div class="col-sm-6">
+              <label type="text"> Age:</label>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Enter your age"
+                class="input form-control mt-1"
+              />
+              <p id="name1_err" class="text-danger"></p>
+            </div>
+            <div class="col-sm-6">
+              <label type="text"> Date of Birth:</label>
+              <input
+                type="date"
+                name="dateofBirth"
+                id="dateofBirth"
+                class="input form-control mt-1"
+              />
+              <p id="name2_err" class="text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row container">
+            <div class="col-sm-6">
+              <label type="text"> Gender:</label>
+              <select
+                type=""
+                name="gender"
+                id="gender"
+                placeholder="Enter your gender"
+                class="input form-control text-dark mt-1"
+              >
+                <option></option>
+                <option class="text-dark">Male</option>
+                <option class="text-dark">Female</option>
+              </select>
+              <p id="name6_err" class="text-danger"></p>
+            </div>
+            <div class="col-sm-6">
+              <label type="text"> City:</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter your city"
+                class="input form-control mt-1"
+              />
+              <p id="name3_err" class="text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row container">
+            <div class="col-sm-6">
+              <label type="text"> Pincode:</label>
+              <input
+                type="number"
+                name="pincode"
+                id="pincode"
+                placeholder="Enter your Pincode"
+                class="input form-control mt-1"
+              />
+              <p id="name5_err" class="text-danger"></p>
+            </div>
+            <div class="col-sm-6">
+              <label type="text"> Address:</label>
+              <textarea
+                class="input form-control pb-5 pt-2"
+                rows="5"
+                placeholder="Enter Your Address"
+                id="address"
+              ></textarea>
+              <p id="name4_err" class="text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-12 d-flex justify-content-center  mt-5 mb-5">
+              <input
+                type="button"
+                onclick="mydetail()"
+                class="beautiful-button fw-bold  text-dark"
+                value="Submit"
+              />
+              <input
+                type="button"
+                onclick="HomeFunction()"
+                class="beautiful-button fw-bold ms-2 text-light"
+                value="Go to student table"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <div class=" container d-flex justify-content-center mt-4 mb-3">
+            <div class=" ">
+              <input
+                type="button"
+                onclick="mydetail()"
+                class="beautiful-button mb-4 mt-4 fw-bold text-dark"
+                value="Submit"
+              />
+            </div> --->
